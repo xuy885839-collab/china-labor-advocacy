@@ -20,6 +20,11 @@ const nextConfig = {
       "video",
     ];
     return [
+      {
+        source: "/",
+        destination: `/${DEFAULT_LOCALE}`,
+        permanent: false,
+      },
       ...pages.map((page) => ({
         source: `/${page}`,
         destination: `/${DEFAULT_LOCALE}/${page}`,
